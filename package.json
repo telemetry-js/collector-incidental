@@ -1,0 +1,33 @@
+{
+  "name": "@telemetry-js/collector-incidental",
+  "version": "0.2.2",
+  "description": "Record incidental values (rather than on a fixed schedule)",
+  "license": "MIT",
+  "author": "Vincent Weevers",
+  "scripts": {
+    "test": "standard && hallmark && node test"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "dependencies": {
+    "@telemetry-js/metric": "^0.1.2"
+  },
+  "devDependencies": {
+    "hallmark": "^3.1.0",
+    "standard": "^14.3.4",
+    "tape": "^4.9.1"
+  },
+  "repository": "telemetry-js/collector-incidental",
+  "bugs": "https://github.com/telemetry-js/collector-incidental/issues",
+  "homepage": "https://github.com/telemetry-js/collector-incidental",
+  "keywords": [
+    "metrics",
+    "measurements",
+    "telemetry"
+  ],
+  "engines": {
+    "node": ">=6"
+  }
+}
