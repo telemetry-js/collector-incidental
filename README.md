@@ -47,11 +47,11 @@ myCount.record(1000)
 myCount.record(500)
 ```
 
-This will publish every recorded value (use sparingly). You will also need a schedule plugin, otherwise the metrics stay queued in `telemetry-collector-incidental` and will never be published.
+This will publish every recorded value (use sparingly). You will also need a schedule plugin, otherwise the metrics stay queued in `collector-incidental` and will never be published.
 
 ### Summarize
 
-If you're calling `record` many times within short time periods, either consider using the `rate` variant of the [`telemetry-collector-counter`](../telemetry-collector-counter) plugin, if it is a rate metric you need, or use `incidental.summary()`:
+If you're calling `record` many times within short time periods, either consider using the `rate` variant of the [`collector-counter`](https://github.com/telemetry-js/collector-counter) plugin, if it is a rate metric you need, or use `incidental.summary()`:
 
 ```js
 const myCount = incidental.summary('my.count', { unit: 'count' })
@@ -87,7 +87,7 @@ myCount.record(500)
 
 This will publish one single value at every ping, reducing the values you recorded between two pings. Here, the first ping will lead to a metric being emitted with value 1000 (the maximum of 500 and 1000). Note that the internal state of the maximum value resets after a ping.
 
-The emitted metrics get a relevant `.statistic` property which publishers like `telemetry-publisher-appoptics` use to control server-side rollup behavior (when it's aggregating values into a lower resolution a.k.a. higher interval).
+The emitted metrics get a relevant `.statistic` property which publishers like [`publisher-appoptics`](https://github.com/telemetry-js/publisher-appoptics) use to control server-side rollup behavior (when it's aggregating values into a lower resolution a.k.a. higher interval).
 
 ## API
 
@@ -98,7 +98,7 @@ Emits every value recorded between pings. It is recommended to end the metric na
 Options:
 
 - `unit`: string, required
-- Other options are passed as-is to `telemetry-metric`.
+- Other options are passed as-is to [`metric`](https://github.com/telemetry-js/metric).
 
 ### `plugin = incidental.summary(metricName, options)`
 
