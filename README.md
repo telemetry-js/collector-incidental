@@ -3,7 +3,7 @@
 > **Record incidental values (rather than on a fixed schedule). Meant to be combined with other plugins in a continuous Telemetry Task; if you merely want to publish metrics once, instead use a publisher plugin by itself.**  
 > A [`telemetry`](https://github.com/telemetry-js/telemetry) plugin.
 
-[![npm status](http://img.shields.io/npm/v/telemetry-js/collector-incidental.svg)](https://www.npmjs.org/package/@telemetry-js/collector-incidental)
+[![npm status](http://img.shields.io/npm/v/@telemetry-js/collector-incidental.svg)](https://www.npmjs.org/package/@telemetry-js/collector-incidental)
 [![node](https://img.shields.io/node/v/@telemetry-js/collector-incidental.svg)](https://www.npmjs.org/package/@telemetry-js/collector-incidental)
 [![Test](https://github.com/telemetry-js/collector-incidental/workflows/Test/badge.svg?branch=main)](https://github.com/telemetry-js/collector-incidental/actions)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -145,7 +145,7 @@ npm install @telemetry-js/collector-incidental
 
 ## Acknowledgements
 
-This project is kindly sponsored by [Reason Cybersecurity Inc](https://reasonsecurity.com).
+This project is kindly sponsored by [Reason Cybersecurity Ltd](https://reasonsecurity.com).
 
 [![reason logo](https://cdn.reasonsecurity.com/github-assets/reason_signature_logo.png)](https://reasonsecurity.com)
 
